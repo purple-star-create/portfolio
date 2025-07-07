@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!-- type de document, encodage des caractères -->
+		<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		<!-- empêcher le référencement -->
+		<meta name="robots" content="noindex, nofollow, noarchive" />
+		<!-- pour les mobiles -->
+		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0" />
+		<!-- titre affiché dans l'onglet du navigateur et sur les moteurs de recherche -->
+		<title>Portfolio</title>
+		<link rel="icon" href="images/pink.jpg" type="image/jpg">
+		<!-- texte de description affiché par les moteurs de recherche -->
+		<meta name="description" content="">
+		<link rel="stylesheet" href="css/style.css">
+		<!-- liens vers les fichiers et librairies JavaScript -->
+		<script src="js/jquery-3.7.1.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js" ></script>
+		<script>
+		const pages = new Map([
+			["page1", { content: 
+			[{ image: "images/charlie/scan131.jpg" },
+			{ image: "images/charlie/scan133.jpg" },
+			{ image: "images/charlie/scan136.jpg" },
+			{ image: "images/charlie/scan137.jpg" },
+			{ image: "images/charlie/scan138.jpg" },
+			{ image: "images/charlie/scan139.jpg" },
+			{ image: "images/charlie/scan140.jpg" },
+			{ image: "images/charlie/scan141.jpg" },
+			{ image: "images/charlie/scan142.jpg" },
+			{ image: "images/charlie/scan143.jpg" },
+			{ image: "images/charlie/scan144.jpg" },
+			{ image: "images/charlie/scan145.jpg" },
+			{ image: "images/charlie/scan146.jpg" },
+			{ image: "images/charlie/scan147.jpg" }
+			] }],
+		
+			["page2", { content: 
+			[{ image: "images/deplie/scan148.jpg" },
+			{ image: "images/deplie/scan149.jpg" },
+			{ image: "images/deplie/scan150.jpg" },
+			{ image: "images/deplie/scan151.jpg" },
+			{ image: "images/deplie/scan152.jpg" },
+			{ image: "images/deplie/scan153.jpg" },
+			{ image: "images/deplie/scan154.jpg" },
+			{ image: "images/deplie/scan155.jpg" },
+			{ image: "images/deplie/scan157.jpg" },
+			{ image: "images/deplie/scan158.jpg" },
+			{ image: "images/deplie/scan159.jpg" },
+			{ image: "images/deplie/scan160.jpg" },
+			{ image: "images/deplie/scan161.jpg" },
+			{ image: "images/deplie/scan162.jpg" },
+			{ image: "images/deplie/scan163.jpg" }
+			] }],
+
+			["page3", { content: 
+			[{ image: "images/jardin/scan171.jpg" },
+			{ image: "images/jardin/scan172.jpg" },
+			{ image: "images/jardin/scan173.jpg" },
+			{ image: "images/jardin/scan174.jpg" },
+			{ image: "images/jardin/scan175.jpg" },
+			{ image: "images/jardin/scan176.jpg" },
+			{ image: "images/jardin/scan177.jpg" },
+			{ image: "images/jardin/scan178.jpg" },
+			{ image: "images/jardin/scan179.jpg" }
+			] }],
+
+			["page4", { content: 
+			[{ image: "images/chaise/scan180.jpg" },
+			{ image: "images/chaise/scan181.jpg" },
+			{ image: "images/chaise/scan182.jpg" },
+			{ image: "images/chaise/scan183.jpg" },
+			{ image: "images/chaise/scan184.jpg" },
+			{ image: "images/chaise/scan185.jpg" },
+			{ image: "images/chaise/scan186.jpg" }
+			] }],
+
+			["page5", { content: 
+			[{ image: "images/crow/Capture.jpg" },
+			{ image: "images/crow/Capture2.jpg" },
+			{ image: "images/crow/Capture3.jpg" },
+			{ image: "images/crow/Capture4.jpg" },
+			{ image: "images/crow/Capture5.jpg" },
+			{ image: "images/crow/Capture6.jpg" },
+			{ image: "images/crow/Capture7.jpg" },
+			{ image: "images/crow/Capture8.jpg" }
+			] }],
+
+			["page6", { content: 
+			[{ image: "images/atelier/scan100.jpg" },
+			{ image: "images/atelier/scan044.jpg" },
+			{ image: "images/atelier/scan042.jpg" },
+			{ image: "images/atelier/scan043.jpg" }
+			] }],
+
+			["page7", { content: 
+			[{ image: "images/graine/Capture1.jpg" },
+			{ image: "images/graine/Capture2.jpg" },
+			{ image: "images/graine/Capture3.jpg" }
+			] }],
+
+			["page8", { content: 
+			[{ image: "images/gifs/003.gif" },
+			{ image: "images/gifs/004.gif" },
+			{ image: "images/gifs/005.gif" },
+			{ image: "images/gifs/006.gif" },
+			{ image: "images/gifs/007.gif" },
+			{ image: "images/gifs/008.gif" },
+			{ image: "images/gifs/009.gif" },
+			{ image: "images/gifs/010.gif" },
+			{ image: "images/gifs/011.gif" },
+			{ image: "images/gifs/012.gif" },
+			{ image: "images/gifs/013.gif" }
+			] }],
+
+			["page9", { content: 
+			[{ image: "images/creative_seeds/001.jpg" },
+			{ image: "images/creative_seeds/002.jpg" },
+			{ image: "images/creative_seeds/003.jpg" },
+			{ image: "images/creative_seeds/004.jpg" },
+			{ image: "images/creative_seeds/005.jpg" },
+			{ image: "images/creative_seeds/006.jpg" },
+			{ image: "images/creative_seeds/007.jpg" },
+			{ image: "images/creative_seeds/008.jpg" },
+			{ image: "images/creative_seeds/009.jpg" },
+			{ image: "images/creative_seeds/010.jpg" }
+			] }],
+
+		]);
+		</script>
+		<script id="page-template" type="x-tmpl-mustache">
+			<section class="carousel">
+			{{#content}}
+			<img class="portfolio" src="{{image}}">
+			{{/content}}
+		</section>
+		</script>
+		<script>
+		document.addEventListener("DOMContentLoaded", function () {
+		const queryString = window.location.search;
+		const urlParams = new URLSearchParams(queryString);
+		const page = urlParams.get('page');
+		const template = document.getElementById('page-template').innerHTML;
+		const rendered = Mustache.render(template, pages.get(page));
+		document.getElementById('content').innerHTML = rendered;
+		});
+		</script>
+	</head>
+	<body>
+		<a id="top"></a>
+		<header>
+			<a class="retour" href="index.html">Retour</a>
+		</header>
+		<main id="content">
+			
+		</main>
+		
+		
+	</body>
+</html>
