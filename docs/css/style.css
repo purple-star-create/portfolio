@@ -278,8 +278,9 @@ ul{
   position: fixed;
   top: 0;
   left: 0;
-  padding-left: 2.5em;
-  padding-top: 2em;
+  margin-left: 2.5em;
+  margin-top: 2em;
+  padding: 0.5em;
 }
 
 .portfolio{
@@ -299,7 +300,10 @@ ul{
 body, header{
   background-color: #ffc4f3;
 }
-
+.retour{
+  background-color: rgba(255, 196, 243, 0.7);
+  border-radius: 0.5rem;
+}
 .links :hover{
   color: #ffc4f3;
 }
