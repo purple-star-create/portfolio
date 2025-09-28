@@ -19,7 +19,7 @@
 		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/3.0.1/mustache.min.js" ></script>
 		<script>
 		const pages = new Map([
-			["page1", { content: 
+			["page1", { titre: "Réédition de *Charlie and the Chocolate Factory* - Juin 2025", text: " *My Favourite Chapters from Charlie and the Chocolate Factory* est un projet de fin d'année de la licence pro design graphique. Cette réédition du roman de Roald Dahl m'a permis de réimaginer l'univers de Charlie en jouant avec la typo, la mise en page ainsi que l'iconographie. Je me suis amusée à faire ces choix pour montrer le contexte historique. La majorité des images sont tirées de catalogues de brocante appartenant à ma mère (qui est british). C'était un plaisir de traduire visuellement ce texte si vivant et magique que j'ai connu toute mon enfance.", content: 
 			[{ image: "images/charlie/scan131.jpg" },
 			{ image: "images/charlie/scan133.jpg" },
 			{ image: "images/charlie/scan136.jpg" },
@@ -34,9 +34,10 @@
 			{ image: "images/charlie/scan145.jpg" },
 			{ image: "images/charlie/scan146.jpg" },
 			{ image: "images/charlie/scan147.jpg" }
-			] }],
+			], 
+			index: index }],
 		
-			["page2", { content: 
+			["page2", { titre: "Déplie-moi : Recherche documentaire sur les livres animés - Juin 2025", text: "Dans le cadre de la licence pro, j'ai fait une recherche documentaire sur les livres animés (livres pop-ups & autres) pour préparer mon projet de réédition *Charlie et la chocolaterie*. C'était très intéressant de trouver des références de livres avec des formes originales, puis de les organiser dans des chapitres et de les commenter. J'ai aussi beaucoup aimé la fabrication du livre en ajoutant des éléments pop-ups ainsi que du papier coloré et des rabats pour mettre en pratique toute ma recherche.", content: 
 			[{ image: "images/deplie/scan148.jpg" },
 			{ image: "images/deplie/scan149.jpg" },
 			{ image: "images/deplie/scan150.jpg" },
@@ -52,9 +53,10 @@
 			{ image: "images/deplie/scan161.jpg" },
 			{ image: "images/deplie/scan162.jpg" },
 			{ image: "images/deplie/scan163.jpg" }
-			] }],
+			], 
+			index: index }],
 
-			["page3", { content: 
+			["page3", { titre: "Album jeunesse *Dans le jardin* - 2021", text: "En sortant des beaux-arts lorsque je cherchais un emploi, j'ai décidé de me lancer dans le projet de créer cet album jeunesse. J'ai vu en Angleterre qu'il existait des jardins partagés où des familles logeant en appartement pouvaient venir jardiner dans des espaces verts dédiés. C'était bien de voir qu'on pouvait être dans la nature à n'importe quelle échelle même en ville et l'impact positif que ça avait. Je me suis dit que ce serait un bon message à transmettre dans un album pour enfants. J'ai écrit l'histoire et fait des illustrations à la gouache, l'aquarelle et aux crayons de couleur.", content: 
 			[{ image: "images/jardin/scan171.jpg" },
 			{ image: "images/jardin/scan172.jpg" },
 			{ image: "images/jardin/scan173.jpg" },
@@ -64,19 +66,33 @@
 			{ image: "images/jardin/scan177.jpg" },
 			{ image: "images/jardin/scan178.jpg" },
 			{ image: "images/jardin/scan179.jpg" }
-			] }],
+			], 
+			index: index }],
 
-			["page4", { content: 
-			[{ image: "images/chaise/scan180.jpg" },
-			{ image: "images/chaise/scan181.jpg" },
+			["page4", { titre: "Workshop édition avec Laurel Parker - Janvier 2025", text: "En licence pro, ma classe a eu la chance d'assister à une semaine de workshop édition avec Laurel Parker. On a été enseigné différentes méthodes de reliure dont la reliure cousue en trois points, le leporello et la reliure japonaise. ", content: 
+			[{ image: "images/chaise/chaise.jpg" },
 			{ image: "images/chaise/scan182.jpg" },
-			{ image: "images/chaise/scan183.jpg" },
 			{ image: "images/chaise/scan184.jpg" },
-			{ image: "images/chaise/scan185.jpg" },
-			{ image: "images/chaise/scan186.jpg" }
-			] }],
+			{ image: "images/chaise/scan002.jpg" },
+			{ image: "images/chaise/scan003.jpg" },
+			{ image: "images/chaise/scan004.jpg" },
+			{ image: "images/chaise/scan005.jpg" },
+			{ image: "images/chaise/scan006.jpg" },
+			{ image: "images/chaise/scan008.jpg" },
+			{ image: "images/chaise/scan010.jpg" },
+			{ image: "images/chaise/scan012.jpg" },
+			{ image: "images/chaise/scan013.jpg" },
+			{ image: "images/chaise/scan014.jpg" },
+			{ image: "images/chaise/scan016.jpg" },
+			{ image: "images/chaise/scan017.jpg" },
+			{ image: "images/chaise/scan018.jpg" },
+			{ image: "images/chaise/scan019.jpg" },
+			{ image: "images/chaise/scan020.jpg" },
+			{ image: "images/chaise/scan021.jpg" }
+			], 
+			index: index }],
 
-			["page5", { content: 
+			["page5", { titre: "Find The Crow - Octobre 2024", text: "Ce site créé aux alentours de Halloween est un jeu de cache-cache où il faut trouver le corbeau dans un univers gothique inspiré de mes lectures. Find the crow...if you dare !", content: 
 			[{ image: "images/crow/Capture.JPG" },
 			{ image: "images/crow/Capture2.JPG" },
 			{ image: "images/crow/Capture3.JPG" },
@@ -85,22 +101,24 @@
 			{ image: "images/crow/Capture6.JPG" },
 			{ image: "images/crow/Capture7.JPG" },
 			{ image: "images/crow/Capture8.JPG" }
-			] }],
+			], 
+			index: index }],
 
-			["page6", { content: 
+			["page6", { titre: "Atelier : Bibliothèque d'outils et de références pour le design graphique - En cours", text: "*Atelier* est une bibliothèque digitale pour le design graphique où j'ai voulu rassembler toutes mes ressources car mes notes sont éparpillées dans plein de carnets différents dans la vraie vie. Ce site est constituée d'une sitothèque webdesign, une liste de fonderies typo, des outils et tutos utiles, de références artistiques et graphiques rassemblées de mes notes des beaux-arts et mes recherches sur le design graphique. *Atelier* me sert pour trouver de l'inspiration et à créer de nouveaux projets.", content: 
 			[{ image: "images/atelier/scan100.JPG" },
 			{ image: "images/atelier/scan044.JPG" },
-			{ image: "images/atelier/scan042.jpg" },
-			{ image: "images/atelier/scan043.jpg" }
-			] }],
+			{ image: "images/atelier/scan042.jpg" }
+			], 
+			index: index }],
 
-			["page7", { content: 
+			["page7", { titre: "Rapport de stage : Devenir une graine - Mai 2025", text: "Ce site raconte mon expérience positive de mon stage chez Creative Seeds. Je partage comment c'était de travailler avec eux, mes découvertes sur le métier et les moments forts.", content: 
 			[{ image: "images/graine/Capture1.JPG" },
 			{ image: "images/graine/Capture2.JPG" },
 			{ image: "images/graine/Capture3.JPG" }
-			] }],
+			], 
+			index: index }],
 
-			["page8", { content: 
+			["page8", { titre: "GIFs", text: "Ces gifs ont été dessinés pendant une période de confinement quand j'étais aux beaux-arts durant la pandémie. Ils dépictent des moments stagnants quand on avait des cours en visio, c'était bizarre comme période mais je suis contente car ça m'a fait découvrir une passion pour la vidéo et l'animation qui me suit jusqu'aujourd'hui.", content: 
 			[{ image: "images/gifs/003.gif" },
 			{ image: "images/gifs/004.gif" },
 			{ image: "images/gifs/005.gif" },
@@ -112,39 +130,70 @@
 			{ image: "images/gifs/011.GIF" },
 			{ image: "images/gifs/012.gif" },
 			{ image: "images/gifs/013.GIF" }
-			] }],
+			], 
+			index: index }],
 
-			["page9", { content: 
+			["page9", { titre: "Communication: Supports imprimés pour Creative Seeds - 2025", text: "Voici quelques supports imprimés de mon stage que j'ai fait pendant trois mois dans le pôle commuication de l'école d'animation 3D Creative Seeds à Cesson-Sévigné. J'ai conçu une gazette pour la communication interne de l'école. J'ai aussi créé des flyers pour les ateliers de l'école tout en utilisant l'identité visuelle de l'école et des brochures pour les deux court-métrages présentés au jury par les élèves de cinquième année.", content: 
 			[{ image: "images/creative_seeds/001.jpg" },
 			{ image: "images/creative_seeds/002.jpg" },
 			{ image: "images/creative_seeds/003.jpg" },
-			{ image: "images/creative_seeds/004.jpg" },
-			{ image: "images/creative_seeds/005.jpg" },
+			{ image: "images/creative_seeds/004.jpg" }
+			], 
+			index: index }],
+
+			["page10", { titre: "Webdesign pour Creative Seeds - 2025", text: "Pendant mon stage dans le pôle communication de l'école d'animation 3D Creative Seeds, j'ai travaillé avec la chargée de communication (ma tutrice Fabienne <3) et le développeur pour ajouter des pages au site dont : une page Ressources pour télécharger des packs gratuitement, une FAQ et une page pour télécharger les brochures sur les formations de l'école.", content: 
+			[{ image: "images/creative_seeds/005.jpg" },
 			{ image: "images/creative_seeds/006.jpg" },
 			{ image: "images/creative_seeds/007.jpg" },
 			{ image: "images/creative_seeds/008.jpg" },
 			{ image: "images/creative_seeds/009.jpg" },
 			{ image: "images/creative_seeds/010.jpg" }
-			] }],
-
+			], 
+			index: index }],
+		
 		]);
+
+		function index() {
+        	return ++window['INDEX']||(window['INDEX']=0);
+        }
 		</script>
+
 		<script id="page-template" type="x-tmpl-mustache">
+			<div class="titre-template">{{titre}}</div>
+			<div class="text-template">{{text}}</div>
 			<section class="carousel">
 			{{#content}}
-			<img class="portfolio" src="{{image}}">
+			<img id="img{{index}}" class="portfolio" src="{{image}}">
 			{{/content}}
-		</section>
+
+			</section>
 		</script>
 		<script>
-		document.addEventListener("DOMContentLoaded", function () {
-		const queryString = window.location.search;
-		const urlParams = new URLSearchParams(queryString);
-		const page = urlParams.get('page');
-		const template = document.getElementById('page-template').innerHTML;
-		const rendered = Mustache.render(template, pages.get(page));
-		document.getElementById('content').innerHTML = rendered;
-		});
+			document.addEventListener("DOMContentLoaded", function () {
+				const queryString = window.location.search;
+				const urlParams = new URLSearchParams(queryString);
+				const page = urlParams.get('page');
+				const template = document.getElementById('page-template').innerHTML;
+				const rendered = Mustache.render(template, pages.get(page));
+				document.getElementById('content').innerHTML = rendered;
+
+				const images = document.querySelectorAll("img.portfolio");
+				images.forEach((image, index) => {
+					image.addEventListener("click", (event) => {
+						modal = document.getElementById("myModal");
+						modalImg = document.getElementById("modalContent");
+						span = document.getElementsByClassName("close")[0];
+						modal.style.display = "block";
+      					modalImg.src = event.target.getAttribute("src");
+      					span.onclick = function() {
+      						modal = document.getElementById("myModal");
+      						modal.style.display = "none";
+    					}
+					});
+				})
+
+				
+			});
 		</script>
 	</head>
 	<body>
@@ -152,10 +201,21 @@
 		<header>
 			<a class="retour" href="index.html">Retour</a>
 		</header>
+
 		<main id="content">
 			
 		</main>
 		
-		
+		<div id="myModal" class="modal">
+
+			<!-- The Close Button -->
+			<span class="close">&times;</span>
+
+			<!-- Modal Content (The Image) -->
+			<img class="modal-content" id="modalContent">
+
+			<!-- Modal Caption (Image Text) -->
+			<div id="caption"></div>
+		</div>
 	</body>
 </html>

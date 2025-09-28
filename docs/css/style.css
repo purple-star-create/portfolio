@@ -121,20 +121,95 @@ header{
   font-family: 'GrandcafeW01-Bold';
 }
 
+/* ----------------------------- */
+/* MODAL IMAGE
+/* ----------------------------- */
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  /*overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  /*width: 80%;*/
+  max-height: 90%;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  /*font-weight: bold;*/
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
 
 /* ----------------------------- */
 /* LAYOUT
 /* ----------------------------- */
-
-.container{
-  cursor: pointer;
-}
 
 header{
   display: flex;
   justify-content: space-between;
   padding: 2em;
   padding-bottom: 1em;
+}
+
+.container{
+  cursor: pointer;
 }
 
 .container{
@@ -145,20 +220,75 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr ;
   padding: 0.7vw;
-  /*column-count: 2;*/
 }
 
+.propos{
+  display: flex;
+}
+
+.presentation, .interets, footer{
+  padding: 3em;
+}
+
+footer{
+  margin-top: 5%;
+  /*padding-bottom: 20%;*/
+}
+
+.footer_accueil{
+  padding: 1.5%;
+  display: flex;
+  justify-content: center;
+}
+
+.liste{
+  display: flex;
+}
+
+ul{
+  padding-right: 2em;
+}
+
+/* ----------------------------- */
+/* PHONES & SMALL SCREENS
+/* ----------------------------- */
 
 @media screen and (max-width: 730px){
+
+  .retour{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding: 0.5em;
+  }
+
+  .modal-content {
+    width: 100%;
+  }
+
   .page{
     grid-template-columns: 1fr;
     margin: 0.5vw auto;
-    max-width: 90vw;
-      
-   }
+    max-width: 90vw;  
+  }
+
   header{
     align-content: center;
   }
+
+  .text-template, .titre-template{
+    width: 90%;
+    padding-top: 7vw;
+    padding-left: 7vw;
+  }
+
+  .text-template{
+     font-size: 1.3rem;
+     padding-bottom: 1vw;
+  }
+
 
   .propos{
     font-size: 1.3rem;
@@ -189,9 +319,13 @@ header{
    }
 
    .carousel{
+    /*display: grid;
+    grid-template-columns: 1fr;*/
     display: flex;
     flex-wrap: wrap;
-   }
+    justify-content: space-evenly;
+    /*padding: 2.8vw;*/
+  }
 
    .propos{
     display: flex;
@@ -205,40 +339,53 @@ header{
    }   
 }
 
-main{
-  display: flex;
-}
-
-.presentation, .interets, footer{
-  padding: 3em;
-}
-
-footer{
-  margin-top: 5%;
-  padding-bottom: 20%;
-}
-
-.footer_accueil{
-  padding: 1.5%;
-  display: flex;
-  justify-content: center;
-}
-
-.liste{
-  display: flex;
-}
-
-ul{
-  padding-right: 2em;
-}
+/* ----------------------------- */
+/* COMPUTER/BIG SCREENS
+/* ----------------------------- */
 
 @media screen and (min-width: 730px){
+
+  .retour{
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 2.5em;
+    margin-top: 2em;
+    padding: 0.5em;
+  }
 
   .links{
     display: flex;
     justify-content: space-between;
   }
 
+  .carousel{
+    /*display: grid;
+    grid-template-columns: 3fr 3fr ;*/
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .carousel img{
+    max-height: 600px;
+    padding: 1em;
+  }
+
+  .text-template, .titre-template{
+    padding: 3vw;
+    width: 50%;
+    padding-bottom: 0vw;
+  }
+
+  .text-template{
+    padding-top: 1vw;
+  }
+
+  .titre-template{
+    font-size: 2rem;
+  }
 }
 
 /* ----------------------------- */
@@ -274,23 +421,15 @@ ul{
   scale: 70%;
 }
 
-.retour{
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-left: 2.5em;
-  margin-top: 2em;
-  padding: 0.5em;
-}
-
 .portfolio{
   max-height: 80vh;
   padding: 0.5em;
 }
 
-.carousel{
-  padding: 2em;
-  display: flex;
+.book_banner{
+  display: block;
+  margin: auto;
+  width: 100%;
 }
 
 /* ----------------------------- */
@@ -300,10 +439,12 @@ ul{
 body, header{
   background-color: #ffc4f3;
 }
+
 .retour{
-  background-color: rgba(255, 196, 243, 0.7);
+  background-color: rgba(255,183,0, 0.7);
   border-radius: 0.5rem;
 }
+
 .links :hover{
   color: #ffc4f3;
 }
