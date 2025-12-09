@@ -220,11 +220,16 @@ header{
   display: grid;
   grid-template-columns: 1fr 1fr ;
   padding: 0.7vw;
+  align-content: center;
 }
 
 .propos{
   display: flex;
 }
+
+.propos_footer{
+    padding-bottom: 25%;
+  }
 
 .presentation, .interets, footer{
   padding: 3em;
@@ -232,7 +237,6 @@ header{
 
 footer{
   margin-top: 5%;
-  /*padding-bottom: 20%;*/
 }
 
 .footer_accueil{
@@ -289,15 +293,18 @@ ul{
      padding-bottom: 1vw;
   }
 
-
   .propos{
     font-size: 1.3rem;
     padding-bottom: 0.5em;
     padding-left: 0.5em;
   }
 
+  .container{
+    max-width: 100vw;
+  }
+
   .logo{
-    font-size: 1.6rem;
+    font-size: 2rem;
     padding-bottom: 0.5em;
   }
 
@@ -324,6 +331,7 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
     /*padding: 2.8vw;*/
   }
 
