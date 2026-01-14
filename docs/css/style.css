@@ -282,13 +282,13 @@ ul{
     align-content: center;
   }
 
-  .text-template, .titre-template{
+  .text-template, .titre-template, .lien-crow{
     width: 90%;
     padding-top: 7vw;
     padding-left: 7vw;
   }
 
-  .text-template{
+  .text-template, .lien-crow{
      font-size: 1.3rem;
      padding-bottom: 1vw;
   }
@@ -381,19 +381,25 @@ ul{
     padding: 1em;
   }
 
-  .text-template, .titre-template{
+  .text-template, .titre-template, .lien-crow{
     padding: 3vw;
     width: 50%;
     padding-bottom: 0vw;
   }
 
-  .text-template{
+  .text-template, .lien-crow{
     padding-top: 1vw;
   }
 
   .titre-template{
     font-size: 2rem;
   }
+
+  .lien-crow{
+    color: darkblue;
+    text-decoration: underline;
+  }
+
 }
 
 /* ----------------------------- */

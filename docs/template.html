@@ -38,21 +38,21 @@
 			index: index }],
 		
 			["page2", { titre: "Déplie-moi : Recherche documentaire sur les livres animés - Juin 2025", text: "Dans le cadre de la licence pro, j'ai fait une recherche documentaire sur les livres animés (livres pop-ups & autres) pour préparer mon projet de réédition *Charlie et la chocolaterie*. C'était très intéressant de trouver des références de livres avec des formes originales, puis de les organiser dans des chapitres et de les commenter. J'ai aussi beaucoup aimé la fabrication du livre en ajoutant des éléments pop-ups ainsi que du papier coloré et des rabats pour mettre en pratique toute ma recherche.", content: 
-			[{ image: "images/deplie/scan148.jpg" },
-			{ image: "images/deplie/scan149.jpg" },
-			{ image: "images/deplie/scan150.jpg" },
-			{ image: "images/deplie/scan151.jpg" },
-			{ image: "images/deplie/scan152.jpg" },
-			{ image: "images/deplie/scan153.jpg" },
-			{ image: "images/deplie/scan154.jpg" },
-			{ image: "images/deplie/scan155.jpg" },
-			{ image: "images/deplie/scan157.jpg" },
-			{ image: "images/deplie/scan158.jpg" },
-			{ image: "images/deplie/scan159.jpg" },
-			{ image: "images/deplie/scan160.jpg" },
-			{ image: "images/deplie/scan161.jpg" },
-			{ image: "images/deplie/scan162.jpg" },
-			{ image: "images/deplie/scan163.jpg" }
+			[{ image: "images/deplie/scan148.webp" },
+			{ image: "images/deplie/scan149.webp" },
+			{ image: "images/deplie/scan150.webp" },
+			{ image: "images/deplie/scan151.webp" },
+			{ image: "images/deplie/scan152.webp" },
+			{ image: "images/deplie/scan153.webp" },
+			{ image: "images/deplie/scan154.webp" },
+			{ image: "images/deplie/scan155.webp" },
+			{ image: "images/deplie/scan157.webp" },
+			{ image: "images/deplie/scan158.webp" },
+			{ image: "images/deplie/scan159.webp" },
+			{ image: "images/deplie/scan160.webp" },
+			{ image: "images/deplie/scan161.webp" },
+			{ image: "images/deplie/scan162.webp" },
+			{ image: "images/deplie/scan163.webp" }
 			], 
 			index: index }],
 
@@ -92,15 +92,15 @@
 			], 
 			index: index }],
 
-			["page5", { titre: "Find The Crow - Octobre 2024", text: "Ce site créé aux alentours de Halloween est un jeu de cache-cache où il faut trouver le corbeau dans un univers gothique inspiré de mes lectures. Find the crow...if you dare !", content: 
-			[{ image: "images/crow/Capture.JPG" },
-			{ image: "images/crow/Capture2.JPG" },
-			{ image: "images/crow/Capture3.JPG" },
-			{ image: "images/crow/Capture4.JPG" },
-			{ image: "images/crow/Capture5.JPG" },
-			{ image: "images/crow/Capture6.JPG" },
-			{ image: "images/crow/Capture7.JPG" },
-			{ image: "images/crow/Capture8.JPG" }
+			["page5", { titre: "Find The Crow - Octobre 2024", lien:"Lien vers le site", text: "Ce site créé aux alentours de Halloween est un jeu de cache-cache où il faut trouver le corbeau dans un univers gothique inspiré de mes lectures. Find the crow...if you dare !", content: 
+			[{ image: "images/crow/FDC_1.webp" },
+			{ image: "images/crow/FDC_2.webp" },
+			{ image: "images/crow/FDC_3.webp" },
+			{ image: "images/crow/FDC_4.webp" },
+			{ image: "images/crow/FDC_5.webp" },
+			{ image: "images/crow/FDC_6.webp" },
+			{ image: "images/crow/FDC_7.webp" },
+			{ image: "images/crow/FDC_8.webp" }
 			], 
 			index: index }],
 
@@ -150,6 +150,18 @@
 			{ image: "images/creative_seeds/010.jpg" }
 			], 
 			index: index }],
+
+			["page11", { titre: "Projet perso : Rapport d'activité Musée Guimet - 2026", text: "En novembre 2025, j’ai assisté à la conférence Mardis Graphiques à Rennes sur les rapports d’activité. Tous les exemples donnés m’ont inspiré à faire ma version graphique du rapport d’activité 2024 du Musée national des arts asiatiques Guimet à Paris. J’ai ajouté des touches de couleurs griffonnées, une nouvelle typo (Alegreya), un nouveau logo pour le musée et des illustrations.", content: 
+			[{ image: "images/guimet/Rapport_activité_Musée_Guimet.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet2.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet3.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet4.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet5.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet6.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet7.webp" },
+			{ image: "images/guimet/Rapport_activité_Musée_Guimet8.webp" }
+			], 
+			index: index }],
 		
 		]);
 
@@ -161,6 +173,8 @@
 		<script id="page-template" type="x-tmpl-mustache">
 			<div class="titre-template">{{titre}}</div>
 			<div class="text-template">{{text}}</div>
+			<a class="lien-crow" href="https://purple-star-create.github.io/Find_The_Crow/">{{lien}}</a>
+
 			<section class="carousel">
 			{{#content}}
 			<img id="img{{index}}" class="portfolio" src="{{image}}">
