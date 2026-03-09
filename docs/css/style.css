@@ -235,6 +235,14 @@ header{
   padding: 3em;
 }
 
+.presentation p{
+  margin-bottom: 1em;
+}
+
+.presentation{
+  max-width: 50%;
+}
+
 footer{
   margin-top: 5%;
 }
