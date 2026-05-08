@@ -215,6 +215,16 @@
 			{ image: "images/ami_retrouve/visuel_2.webp" }
 			], 
 			index: index }],
+
+			["page17", { titre: "🔮 Tarot Manga ✨ - Mai 2026", text: "Plongée dans un univers entre mystique et manga ✨ J’ai créé un échantillon de cartes de tarot inspiré de l’esthétique manga, accompagné d’un dépliant expliquant la signification de chaque carte. Un projet où tradition et modernité se rencontrent, avec une influence directe des célèbres cartes Rider–Waite 🔮", content: 
+			[{ image: "images/tarot_webp/visuel_1.webp" },
+			{ image: "images/tarot_webp/visuel_2.webp" },
+			{ image: "images/tarot_webp/visuel_3.webp" },
+			{ image: "images/tarot_webp/visuel_4.webp" },
+			{ image: "images/tarot_webp/visuel_5.webp" },
+			{ image: "images/tarot_webp/visuel_6.webp" }
+			], 
+			index: index }],
 		
 		]);
 
@@ -226,8 +236,6 @@
 		<script id="page-template" type="x-tmpl-mustache">
 			<div class="titre-template">{{titre}}</div>
 			<div class="text-template">{{text}}</div>
-			<a class="lien-crow" href="https://purple-star-create.github.io/Find_The_Crow/" target="_blank">{{lien}}</a>
-
 			<section class="carousel">
 			{{#content}}
 			<img id="img{{index}}" class="portfolio" src="{{image}}">
