@@ -351,6 +351,11 @@ ul{
     padding: 25px;
   }
 
+  .french{
+    max-height: 25px;
+  }
+
+
   .text-template, .titre-template, .lien-crow{
     width: 90%;
     padding-top: 7vw;
@@ -437,6 +442,10 @@ ul{
     margin-left: 2.5em;
     margin-top: 2em;
     padding: 0.5em;
+  }
+
+  .french{
+    max-width: 50px;
   }
 
   .links{
