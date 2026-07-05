@@ -128,13 +128,11 @@ header{
   font-size: 3.5rem;
   font-family: 'GrandcafeW01-Bold';
   position: absolute;
-  left: 25px;
   padding-bottom: 100px;
 }
 
 .mini_logo{
   position: absolute;
-  left: 25px;
   top: 80px;
 }
 
@@ -236,8 +234,8 @@ header{
 
 .page{
   display: grid;
-  grid-template-columns: 1fr 1fr ;
-  padding: 0.7vw;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1.5vw;
   padding-top: 40px;
   align-content: center;
 }
@@ -267,10 +265,6 @@ menu{
 
 .presentation, .interets{
   padding-top: 0em;
-}
-
-.presentation{
-  max-width: 50%;
 }
 
 .liste{
@@ -424,9 +418,7 @@ ul{
     top: 47px;
   }
 
-  .presentation{
-    max-width: 90%;
-  }
+
 }
 
 /* ----------------------------- */
@@ -453,25 +445,23 @@ ul{
     justify-content: space-between;
   }
 
-  .text-template, .titre-template, .carousel{
-    padding-bottom: 2vw;
+  .carousel{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 2.5vw;
+    margin-right: 2.5vw;
+    margin-bottom: 2vw;
+  }
+
+  .titre-template{
+    padding-bottom: 1vw;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
   }
 
   .carousel img{
     max-height: 600px;
-    padding: 1em;
-  }
-
-  .text-template, .titre-template, .lien-crow{
-    padding-left: 25vw;
-    padding-right: 25vw;
-  }
-
-  .text-template, .lien-crow{
-    padding-top: 1vw;
+    padding: 0.8em;
   }
 
   .titre-template{
@@ -480,6 +470,15 @@ ul{
 
   .page_propos{
     display: flex;
+    justify-content: center;
+  }
+  
+  .presentation{
+    max-width: 50%;
+  }
+
+  .cup{
+    max-width: 100%;
   }
 
 }
@@ -522,11 +521,6 @@ ul{
   padding: 0.5em;
 }
 
-.book_banner{
-  display: block;
-  margin: auto;
-  width: 100%;
-}
 
 /* ----------------------------- */
 /* COLOURS
