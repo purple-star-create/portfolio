@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5{
 
 body{
   font-family: 'NimbusSanL-Reg','Helvetica', Arial, sans-serif;
-  font-size: 1.6rem; /* 1.6rem = 16px dans notre cas */
+  font-size: 160%; /* 1.6rem = 16px dans notre cas */
   line-height: 1.2;
 }
 
@@ -116,16 +116,16 @@ body{
 }
 
 h2{
-  font-size: 3rem;
+  font-size: 200%;
   padding-bottom: 1em;
 }
 
 header{
-  font-size: 2rem;
+  font-size: 130%;
 }
 
 .logo{
-  font-size: 3.5rem;
+  font-size: 160%;
   font-family: 'GrandcafeW01-Bold';
   position: absolute;
   padding-bottom: 100px;
@@ -361,12 +361,8 @@ ul{
      padding-bottom: 1vw;
   }
 
-  .mini_logo{
-    font-size: 1.3rem;
-  }
-
-  .propos{
-    font-size: 1.5rem;
+  .mini_logo, .propos{
+    font-size: 75%;
   }
 
   .container{
@@ -374,11 +370,11 @@ ul{
   }
 
   .logo{
-    font-size: 1.5rem;
+    font-size: 85%;
   }
 
   footer{
-    font-size: 1.2rem;
+    font-size: 70%;
   }
 
   .eyes, .cup{
@@ -417,7 +413,6 @@ ul{
     left: 25px;
     top: 47px;
   }
-
 
 }
 
@@ -465,7 +460,7 @@ ul{
   }
 
   .titre-template{
-    font-size: 2rem;
+    font-size: 150%;
   }
 
   .page_propos{
@@ -520,7 +515,6 @@ ul{
   max-height: 80vh;
   padding: 0.5em;
 }
-
 
 /* ----------------------------- */
 /* COLOURS
