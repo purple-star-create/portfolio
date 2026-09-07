@@ -8,6 +8,7 @@
  Code source for a portfolio website with an image grid "gallery" landing page and an "about" page in both French and English.
 
 ## Skills :
+- Responsive Design
 - HTML
 - CSS
 - Javascript
