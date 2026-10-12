@@ -110,11 +110,6 @@ body{
   padding-bottom: 0.8em;
 }
 
-.text{
-  display: flex;
-  justify-content: space-between;
-}
-
 h2{
   font-size: 200%;
   padding-bottom: 1em;
@@ -128,7 +123,6 @@ header{
   font-size: 160%;
   font-family: 'GrandcafeW01-Bold';
   position: absolute;
-  padding-bottom: 100px;
 }
 
 .mini_logo{
@@ -217,7 +211,9 @@ header{
 /* ----------------------------- */
 
 header{
-  padding: 2em;
+  padding-top: 2em;
+  padding-left: 2em;
+   padding-bottom: 5em;
 }
 
 .header_template{
@@ -234,9 +230,9 @@ header{
 
 .page{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 1.5vw;
-  padding-top: 40px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 2vw;
+  padding-top: 0px;
   align-content: center;
 }
 
@@ -367,7 +363,7 @@ ul{
 
   .container{
     max-width: 100vw;
-  }
+  } 
 
   .logo{
     font-size: 85%;
@@ -476,6 +472,14 @@ ul{
     max-width: 100%;
   }
 
+  .container{
+    filter: grayscale(100%);
+  }
+
+  .container:hover{
+    filter: grayscale(0);
+  }
+
 }
 
 /* ----------------------------- */
@@ -520,7 +524,7 @@ ul{
 /* COLOURS
 /* ----------------------------- */
 
-body, header{
+body{
   background-color: #fffaeb;
 }
 
